@@ -1,3 +1,5 @@
+package classes;
+
 public class Movie {
 
     public static final int CHILDRENS = 2;
@@ -28,7 +30,7 @@ public class Movie {
                 this.price = new NewReleasePrice();
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect Price Code");
+                throw new IllegalArgumentException("Incorrect classes.Price Code");
         }
     }
 
@@ -36,11 +38,11 @@ public class Movie {
         return title;
     };
 
-    double getCharge(int days) {
+    public double getCharge(int days) {
         return price.getCharge(days);
     }
 
-    int getFrequentRenterPoints(int days) {
+    public int getFrequentRenterPoints(int days) {
         return this.price.getFrequentRenterPoints(days);
     }
 }

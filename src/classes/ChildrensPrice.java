@@ -1,3 +1,5 @@
+package classes;
+
 class ChildrensPrice extends Price {
     @Override
     public double getCharge(int days) {

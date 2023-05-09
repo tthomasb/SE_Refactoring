@@ -1,4 +1,6 @@
-class Rental {
+package classes;
+
+public class Rental {
 
     private Movie movie;
     private int daysRented;
@@ -16,11 +18,11 @@ class Rental {
         return movie;
     }
 
-    double getCharge() {
+    public double getCharge() {
         return this.movie.getCharge(this.daysRented);
     }
 
-    int getFrequentRenterPoints() {
+    public int getFrequentRenterPoints() {
         return this.movie.getFrequentRenterPoints(this.daysRented);
     }
 }

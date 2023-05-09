@@ -1,3 +1,5 @@
+package classes;
+
 class NewReleasePrice extends Price {
 
     @Override
